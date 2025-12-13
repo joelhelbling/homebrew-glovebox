@@ -5,13 +5,13 @@
 class Glovebox < Formula
   desc "CLI for sandboxed development environments using Docker"
   homepage "https://github.com/joelhelbling/glovebox"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joelhelbling/glovebox/releases/download/v0.3.1/glovebox_0.3.1_darwin_amd64.tar.gz"
-      sha256 "457de25010c7d9d4dcf272da24abac616811efd9b08e987275a2db06a2fe65e3"
+      url "https://github.com/joelhelbling/glovebox/releases/download/v0.3.2/glovebox_0.3.2_darwin_amd64.tar.gz"
+      sha256 "fd327fb221fe0c68b34c21296f17820153615f40800b5e99cc57d81eaab2d548"
 
       def install
         bin.install "glovebox"
@@ -19,8 +19,8 @@ class Glovebox < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joelhelbling/glovebox/releases/download/v0.3.1/glovebox_0.3.1_darwin_arm64.tar.gz"
-      sha256 "32b037ebe6e0aceb58f11c8e617f9bcc565c7efc1ceffa19fcccf1e086a08748"
+      url "https://github.com/joelhelbling/glovebox/releases/download/v0.3.2/glovebox_0.3.2_darwin_arm64.tar.gz"
+      sha256 "d0e6d81312d0aaf3d5b62d2891d33833ec67da2b11ef6f797b9a7c1022e6536e"
 
       def install
         bin.install "glovebox"
@@ -31,16 +31,16 @@ class Glovebox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joelhelbling/glovebox/releases/download/v0.3.1/glovebox_0.3.1_linux_amd64.tar.gz"
-      sha256 "d46445d97708a3f1c4ce6146d71f2bde33526ad87e78c228e07789a4649cb216"
+      url "https://github.com/joelhelbling/glovebox/releases/download/v0.3.2/glovebox_0.3.2_linux_amd64.tar.gz"
+      sha256 "c6f47d59704e76ac805e8f612470f813a5010038700876035e43c09a4fa5df60"
       def install
         bin.install "glovebox"
         bin.install_symlink "glovebox" => "gb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joelhelbling/glovebox/releases/download/v0.3.1/glovebox_0.3.1_linux_arm64.tar.gz"
-      sha256 "532e97a1655fab43fb0b0d11dabbe7ab79c7019013638f02e82891f3c00bb947"
+      url "https://github.com/joelhelbling/glovebox/releases/download/v0.3.2/glovebox_0.3.2_linux_arm64.tar.gz"
+      sha256 "34d18d7638b77e67eef4349881acebdfb0bf59686cc3ee914296a63b3a095a11"
       def install
         bin.install "glovebox"
         bin.install_symlink "glovebox" => "gb"
